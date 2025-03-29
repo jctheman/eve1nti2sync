@@ -5,7 +5,11 @@ import Hero from "@/components/home/Hero";
 import Features from "@/components/home/Features";
 import Benefits from "@/components/home/Benefits";
 import Testimonials from "@/components/home/Testimonials";
+import TrustedBy from "@/components/home/TrustedBy";
 import CTASection from "@/components/home/CTASection";
+import Pricing from "@/components/home/Pricing";
+import FAQ from "@/components/home/FAQ";
+import AIProductShowcase from "@/components/home/AIProductShowcase";
 
 const Index = () => {
   return (
@@ -13,9 +17,13 @@ const Index = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
+        <TrustedBy />
         <Features />
+        <AIProductShowcase />
         <Benefits />
         <Testimonials />
+        <Pricing />
+        <FAQ />
         <CTASection />
       </main>
       <Footer />
