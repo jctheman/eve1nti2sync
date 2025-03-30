@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -44,10 +43,9 @@ const ContactForm = () => {
   };
 
   const sendEmail = async (data: typeof formData) => {
-    // Using EmailJS service for email sending without backend
-    const emailServiceId = "service_id"; // Replace with your EmailJS service ID
-    const emailTemplateId = "template_id"; // Replace with your EmailJS template ID
-    const emailUserId = "user_id"; // Replace with your EmailJS user ID
+    // Using the provided EmailJS service and template IDs
+    const emailServiceId = "service_mue1zpi";
+    const emailTemplateId = "template_ab8vcpm";
     
     const templateParams = {
       to_email: "sales@sarcontech.com",
@@ -61,25 +59,16 @@ const ContactForm = () => {
     };
     
     try {
-      // Use the emailjs-com library (would need to be added as a dependency)
-      // EmailJS CDN (loaded in index.html): <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-      const response = await fetch(`https://api.emailjs.com/api/v1.0/email/send`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          service_id: emailServiceId,
-          template_id: emailTemplateId,
-          user_id: emailUserId,
-          template_params: templateParams
-        })
-      });
+      const response = await window.emailjs.send(
+        emailServiceId,
+        emailTemplateId,
+        templateParams
+      );
       
-      if (response.ok) {
+      if (response.status === 200) {
         return true;
       } else {
-        console.error("Failed to send email:", await response.text());
+        console.error("Failed to send email:", response);
         return false;
       }
     } catch (error) {
@@ -93,7 +82,6 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      // Simulate email sending (real implementation would use EmailJS or a similar service)
       const emailSent = await sendEmail(formData);
       
       if (emailSent) {
