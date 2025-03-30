@@ -43,25 +43,80 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const sendEmail = async (data: typeof formData) => {
+    // Using EmailJS service for email sending without backend
+    const emailServiceId = "service_id"; // Replace with your EmailJS service ID
+    const emailTemplateId = "template_id"; // Replace with your EmailJS template ID
+    const emailUserId = "user_id"; // Replace with your EmailJS user ID
+    
+    const templateParams = {
+      to_email: "sales@sarcontech.com",
+      from_name: data.name,
+      from_email: data.email,
+      company: data.company,
+      phone: data.phone,
+      interest_type: data.interestType,
+      message: data.message,
+      subscribe: data.subscribe ? "Yes" : "No"
+    };
+    
+    try {
+      // Use the emailjs-com library (would need to be added as a dependency)
+      // EmailJS CDN (loaded in index.html): <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      const response = await fetch(`https://api.emailjs.com/api/v1.0/email/send`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          service_id: emailServiceId,
+          template_id: emailTemplateId,
+          user_id: emailUserId,
+          template_params: templateParams
+        })
+      });
+      
+      if (response.ok) {
+        return true;
+      } else {
+        console.error("Failed to send email:", await response.text());
+        return false;
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      return false;
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Simulate email sending (real implementation would use EmailJS or a similar service)
+      const emailSent = await sendEmail(formData);
+      
+      if (emailSent) {
+        toast.success("Thank you for your message! We'll get back to you soon.");
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          interestType: "demo",
+          message: "",
+          subscribe: true,
+        });
+      } else {
+        toast.error("Failed to send your message. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Error in form submission:", error);
+      toast.error("An error occurred. Please try again later.");
+    } finally {
       setIsSubmitting(false);
-      toast.success("Thank you for your message! We'll get back to you soon.");
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        phone: "",
-        interestType: "demo",
-        message: "",
-        subscribe: true,
-      });
-    }, 1000);
+    }
   };
 
   return (
