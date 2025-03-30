@@ -22,10 +22,10 @@ const InteractiveDemo = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">
-            Try Our AI Solutions <span className="text-brand-purple">Live</span>
+            Explore Our AI Solution previews <span className="text-brand-purple">Live</span>
           </h2>
           <p className="text-lg text-gray-600">
-            Experience the power of our AI tools with these interactive demos. See how AIEventManager can transform your event management.
+            Experience the power of our AI tools with these interactive previews. See how AIEventManager can transform your event management.
           </p>
         </motion.div>
 
