@@ -49,7 +49,7 @@ const Hero = () => {
               </Link>
               <Link to="/demo">
                 <Button variant="outline" className="px-8 py-6 text-lg group">
-                  Try Interactive Demos
+                  Try Interactive Preview
                 </Button>
               </Link>
             </motion.div>
