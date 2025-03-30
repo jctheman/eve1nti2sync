@@ -23,7 +23,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.7 }}
               >
-                Transform Your <span className="gradient-text">Events</span> with AI-Powered Management
+                Transform Your <span className="gradient-text">Events</span> with the power of AI
               </motion.h1>
               <motion.p 
                 className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl"
