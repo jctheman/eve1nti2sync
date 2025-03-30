@@ -7,41 +7,19 @@ const ContactInfo = () => {
       <div>
         <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
         <div className="space-y-4">
-          <div className="flex items-start">
-            <Mail className="text-brand-purple mr-4 shrink-0 mt-1" size={20} />
-            <div>
-              <h3 className="font-semibold">Email</h3>
-              <p className="text-gray-600">hello@eventsyncai.com</p>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <Phone className="text-brand-purple mr-4 shrink-0 mt-1" size={20} />
-            <div>
-              <h3 className="font-semibold">Phone</h3>
-              <p className="text-gray-600">+1 (555) 123-4567</p>
-            </div>
-          </div>
+          
           <div className="flex items-start">
             <MapPin className="text-brand-purple mr-4 shrink-0 mt-1" size={20} />
             <div>
               <h3 className="font-semibold">Address</h3>
               <p className="text-gray-600">
-                123 Event Avenue, Suite 200<br />
-                San Francisco, CA 94103<br />
-                United States
+              651 N Broad St, Suite 201<br />
+              Middletown, DE 19709<br />
+              United States
               </p>
             </div>
           </div>
-          <div className="flex items-start">
-            <Clock className="text-brand-purple mr-4 shrink-0 mt-1" size={20} />
-            <div>
-              <h3 className="font-semibold">Hours</h3>
-              <p className="text-gray-600">
-                Monday - Friday: 9:00 AM - 5:00 PM PST<br />
-                Saturday - Sunday: Closed
-              </p>
-            </div>
-          </div>
+          
         </div>
       </div>
       
