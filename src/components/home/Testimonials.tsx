@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "EventSync AI's chatbot reduced our customer service inquiries by 70% and saved us countless hours of manual work.",
+    quote: "AIEventManager's chatbot reduced our customer service inquiries by 70% and saved us countless hours of manual work.",
     author: "Sarah Johnson",
     title: "Event Director, TechConf Global",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80",
