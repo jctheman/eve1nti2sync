@@ -9,7 +9,7 @@ import TrustedBy from "@/components/home/TrustedBy";
 import CTASection from "@/components/home/CTASection";
 import Pricing from "@/components/home/Pricing";
 import FAQ from "@/components/home/FAQ";
-import AIProductShowcase from "@/components/home/AIProductShowcase";
+import InteractiveDemo from "@/components/home/InteractiveDemo";
 
 const Index = () => {
   return (
@@ -17,8 +17,8 @@ const Index = () => {
       <Navbar />
       <main className="flex-grow">
         <Hero />
-        <AIProductShowcase />
         <TrustedBy />
+        <InteractiveDemo />
         <Features />
         <Benefits />
         <Testimonials />
