@@ -7,20 +7,20 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     quote: "AIEventManager's chatbot reduced our customer service inquiries by 70% and saved us countless hours of manual work.",
-    author: "Sarah Johnson",
+    author: "Sarah",
     title: "Event Director, TechConf Global",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80",
   },
   {
     quote: "The lead scoring feature transformed how our exhibitors connect with attendees. We've seen a 45% increase in meaningful connections.",
-    author: "Michael Rodriguez",
-    title: "VP of Events, Industry Summit",
+    author: "Michael",
+    title: "VP of Events, AI Summit",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80",
   },
   {
     quote: "The AI writing assistant helped us create consistent, engaging content across all our event communications in half the time.",
-    author: "Jennifer Lee",
-    title: "Marketing Director, Annual Expo",
+    author: "Jennifer ",
+    title: "Marketing Director, Med Expo",
     image: "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80",
   },
 ];
