@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,6 +7,20 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
+
+// Add this type declaration for EmailJS
+declare global {
+  interface Window {
+    emailjs: {
+      init: (userId: string) => void;
+      send: (
+        serviceId: string,
+        templateId: string,
+        templateParams: Record<string, any>
+      ) => Promise<{ status: number; text: string }>;
+    };
+  }
+}
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
