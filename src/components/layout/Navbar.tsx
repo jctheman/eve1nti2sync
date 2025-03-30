@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold gradient-text">EventSync AI</span>
+            <span className="text-2xl font-bold gradient-text">AIEventManager</span>
           </Link>
 
           {/* Desktop Navigation */}

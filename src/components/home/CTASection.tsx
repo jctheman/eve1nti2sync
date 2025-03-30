@@ -12,7 +12,7 @@ const CTASection = () => {
             Ready to Transform Your Event Management?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join 500+ event organizers who are saving time, reducing costs, and delivering exceptional experiences with EventSync AI.
+            Join 500+ event organizers who are saving time, reducing costs, and delivering exceptional experiences with AIEventManager.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">

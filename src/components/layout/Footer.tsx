@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              <span className="text-xl font-bold gradient-text">EventSync AI</span>
+              <span className="text-xl font-bold gradient-text">AIEventManager</span>
             </Link>
             <p className="text-gray-600 text-sm">
               Revolutionizing event management with AI-powered solutions that streamline operations and enhance attendee experiences.
@@ -111,7 +111,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-200 mt-10 pt-6">
           <p className="text-sm text-gray-500 text-center">
-            © {new Date().getFullYear()} EventSync AI. All rights reserved.
+            © {new Date().getFullYear()} AIEventManager. All rights reserved.
           </p>
         </div>
       </div>
