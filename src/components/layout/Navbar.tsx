@@ -1,18 +1,13 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MenuIcon, X } from "lucide-react";
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+  return <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
@@ -27,9 +22,7 @@ const Navbar = () => {
             <Link to="/features" className="font-medium text-gray-700 hover:text-brand-purple transition-colors">
               Features
             </Link>
-            <Link to="/demo" className="font-medium text-gray-700 hover:text-brand-purple transition-colors">
-              Interactive Demos
-            </Link>
+            <Link to="/demo" className="font-medium text-gray-700 hover:text-brand-purple transition-colors">Interactive Previews</Link>
             <Link to="/about" className="font-medium text-gray-700 hover:text-brand-purple transition-colors">
               About Us
             </Link>
@@ -54,8 +47,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 animate-fade-in">
+        {isMenuOpen && <div className="md:hidden py-4 animate-fade-in">
             <nav className="flex flex-col space-y-4">
               <Link to="/" className="font-medium text-gray-700 hover:text-brand-purple transition-colors px-2 py-1" onClick={() => setIsMenuOpen(false)}>
                 Home
@@ -81,11 +73,8 @@ const Navbar = () => {
                 </Link>
               </div>
             </nav>
-          </div>
-        )}
+          </div>}
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Navbar;
