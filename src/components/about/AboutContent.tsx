@@ -33,13 +33,13 @@ const AboutContent = () => {
             <h2 className="text-3xl font-bold mb-6">Our Story</h2>
             <div className="space-y-4 text-gray-600">
               <p>
-                EventSync AI was founded by a team of event industry veterans who recognized the transformative potential of AI in solving the complex challenges of event management.
+                AIEventManager was founded by a team of event industry veterans who recognized the transformative potential of AI in solving the complex challenges of event management.
               </p>
               <p>
                 With decades of combined experience in planning and executing events of all sizes, our founders experienced firsthand the time-consuming, repetitive tasks that dominate event management. They envisioned a future where AI could handle these tasks, freeing event professionals to focus on creating exceptional experiences.
               </p>
               <p>
-                Today, EventSync AI is at the forefront of the event technology revolution, providing innovative AI-powered solutions that streamline operations, enhance attendee experiences, and deliver measurable ROI for event organizers.
+                Today, AIEventManager is at the forefront of the event technology revolution, providing innovative AI-powered solutions that streamline operations, enhance attendee experiences, and deliver measurable ROI for event organizers.
               </p>
               <p>
                 Our platform is trusted by over 500 event organizers worldwide, from corporate event teams to professional conference organizers, all of whom are experiencing the benefits of AI-assisted event management.

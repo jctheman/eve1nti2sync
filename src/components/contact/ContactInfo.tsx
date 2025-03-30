@@ -26,7 +26,7 @@ const ContactInfo = () => {
       <div>
         <h2 className="text-2xl font-bold mb-6">Request a Demo</h2>
         <p className="text-gray-600 mb-4">
-          Want to see EventSync AI in action? Schedule a personalized demo with one of our product specialists.
+          Want to see AIEventManager in action? Schedule a personalized demo with one of our product specialists.
         </p>
         <p className="text-gray-600">
           During the demo, we'll:

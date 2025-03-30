@@ -9,7 +9,7 @@ const AboutHero = () => {
       <div className="container-custom relative py-16 md:py-24">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            About EventSync AI
+            About AIEventManager
           </h1>
           <p className="text-xl text-gray-600 mb-8">
             We're transforming the event industry with AI-powered solutions that streamline operations and enhance experiences.

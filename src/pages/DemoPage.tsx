@@ -28,7 +28,7 @@ const DemoPage = () => {
                 Try Our AI Solutions <span className="gradient-text">Live</span>
               </h1>
               <p className="text-lg text-gray-600">
-                Experience the power of our AI tools with these interactive demos. See how EventSync AI can transform your event management.
+                Experience the power of our AI tools with these interactive demos. See how AIEventManager can transform your event management.
               </p>
             </motion.div>
 

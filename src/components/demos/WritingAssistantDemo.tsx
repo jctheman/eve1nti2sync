@@ -66,7 +66,7 @@ Dr. James Wilson is the Chief AI Officer at EventSync. With over 15 years of exp
       title: "Social Media Promotional Post",
       content: `🚀 Ready to transform your events with the power of AI? 
 
-Join us at #TechConfGlobal2023 to discover how EventSync AI is revolutionizing event management through intelligent automation.
+Join us at #TechConfGlobal2023 to discover how AIEventManager is revolutionizing event management through intelligent automation.
 
 ✅ Reduce customer service costs by up to $200K annually
 ✅ Increase exhibitor ROI with smart lead scoring

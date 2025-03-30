@@ -17,7 +17,7 @@ const ContactPage = () => {
                 Get in Touch
               </h1>
               <p className="text-xl text-gray-600">
-                Have questions about EventSync AI? Want to schedule a demo? We're here to help.
+                Have questions about AIEventManager? Want to schedule a demo? We're here to help.
               </p>
             </div>
             

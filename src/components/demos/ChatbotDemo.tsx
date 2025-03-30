@@ -15,8 +15,8 @@ type Message = {
 };
 
 const predefinedResponses: Record<string, string> = {
-  "hello": "Hello! I'm the EventSync AI assistant. How can I help you with your event today?",
-  "hi": "Hi there! I'm the EventSync AI assistant. How can I help you with your event today?",
+  "hello": "Hello! I'm the AIEventManager assistant. How can I help you with your event today?",
+  "hi": "Hi there! I'm the AIEventManager assistant. How can I help you with your event today?",
   "event date": "The TechConf Global event is scheduled for October 15-17, 2023, at the San Francisco Convention Center.",
   "registration": "Registration for TechConf Global is open until September 30. Early bird tickets are available until August 15 with a 20% discount.",
   "discount": "Yes, we offer early bird discounts of 20% until August 15. We also have group discounts for teams of 5 or more attendees.",
@@ -30,7 +30,7 @@ const ChatbotDemo = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "Hi there! I'm the EventSync AI assistant. How can I help you with your event today?",
+      text: "Hi there! I'm the AIEventManager assistant. How can I help you with your event today?",
       sender: 'bot',
       timestamp: new Date(),
     }
@@ -92,7 +92,7 @@ const ChatbotDemo = () => {
       <CardHeader className="bg-brand-purple text-white py-4 px-6">
         <CardTitle className="flex items-center">
           <Bot className="mr-2" size={24} />
-          EventSync AI Chatbot
+          AIEventManager Chatbot
         </CardTitle>
       </CardHeader>
       <CardContent className="p-0 flex flex-col h-[calc(100%-68px)]">
