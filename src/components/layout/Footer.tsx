@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 const Footer = () => {
@@ -84,19 +85,19 @@ const Footer = () => {
             <h3 className="font-semibold text-gray-900 mb-4">Legal</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-600 hover:text-brand-purple transition-colors text-sm">
+                <Link to="/privacy-policy" className="text-gray-600 hover:text-brand-purple transition-colors text-sm">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-brand-purple transition-colors text-sm">
+                <Link to="/terms-of-service" className="text-gray-600 hover:text-brand-purple transition-colors text-sm">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-600 hover:text-brand-purple transition-colors text-sm">
+                <Link to="/cookie-policy" className="text-gray-600 hover:text-brand-purple transition-colors text-sm">
                   Cookie Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

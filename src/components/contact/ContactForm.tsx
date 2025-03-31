@@ -17,7 +17,7 @@ declare global {
         serviceId: string,
         templateId: string,
         templateParams: Record<string, any>,
-        userId?: string
+        userId: string
       ) => Promise<{ status: number; text: string }>;
     };
   }
@@ -59,9 +59,9 @@ const ContactForm = () => {
   };
 
   const sendEmail = async (data: typeof formData) => {
-    // Using the provided EmailJS service and template IDs
+    // Updated template ID to the correct one
     const emailServiceId = "service_mue1zpi";
-    const emailTemplateId = "template_ab8vcpm";
+    const emailTemplateId = "template_3y5oipj"; // Fixed template ID
     const publicKey = "PoxYb4i_l29fvvWV9";
     
     const templateParams = {
@@ -78,6 +78,7 @@ const ContactForm = () => {
     try {
       console.log("Sending email with params:", templateParams);
       
+      // Explicitly pass the publicKey as the last argument
       const response = await window.emailjs.send(
         emailServiceId,
         emailTemplateId,
