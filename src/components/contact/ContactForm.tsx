@@ -7,21 +7,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { toast } from "sonner";
-
-// Add this type declaration for EmailJS
-declare global {
-  interface Window {
-    emailjs: {
-      init: (userId: string) => void;
-      send: (
-        serviceId: string,
-        templateId: string,
-        templateParams: Record<string, any>,
-        userId: string
-      ) => Promise<{ status: number; text: string }>;
-    };
-  }
-}
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -72,14 +58,13 @@ const ContactForm = () => {
       phone: data.phone,
       interest_type: data.interestType,
       message: data.message,
-      subscribe: data.subscribe ? "Yes" : "No"
     };
     
     try {
       console.log("Sending email with params:", templateParams);
       
       // Explicitly pass the publicKey as the last argument
-      const response = await window.emailjs.send(
+      const response = await emailjs.send(
         emailServiceId,
         emailTemplateId,
         templateParams,
