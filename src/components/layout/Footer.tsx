@@ -1,10 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-gray-50 border-t">
+  return <footer className="bg-gray-50 border-t">
       <div className="container-custom pt-12 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -69,11 +66,7 @@ const Footer = () => {
                   About Us
                 </Link>
               </li>
-              <li>
-                <Link to="/careers" className="text-gray-600 hover:text-brand-purple transition-colors text-sm">
-                  Careers
-                </Link>
-              </li>
+              
               <li>
                 <a href="#" className="text-gray-600 hover:text-brand-purple transition-colors text-sm">
                   Blog
@@ -115,8 +108,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
