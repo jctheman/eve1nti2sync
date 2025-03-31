@@ -16,7 +16,8 @@ declare global {
       send: (
         serviceId: string,
         templateId: string,
-        templateParams: Record<string, any>
+        templateParams: Record<string, any>,
+        userId?: string
       ) => Promise<{ status: number; text: string }>;
     };
   }
@@ -61,6 +62,7 @@ const ContactForm = () => {
     // Using the provided EmailJS service and template IDs
     const emailServiceId = "service_mue1zpi";
     const emailTemplateId = "template_ab8vcpm";
+    const publicKey = "PoxYb4i_l29fvvWV9";
     
     const templateParams = {
       to_email: "sales@sarcontech.com",
@@ -74,11 +76,16 @@ const ContactForm = () => {
     };
     
     try {
+      console.log("Sending email with params:", templateParams);
+      
       const response = await window.emailjs.send(
         emailServiceId,
         emailTemplateId,
-        templateParams
+        templateParams,
+        publicKey
       );
+      
+      console.log("Email response:", response);
       
       if (response.status === 200) {
         return true;
@@ -97,6 +104,7 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
+      console.log("Form submission started with data:", formData);
       const emailSent = await sendEmail(formData);
       
       if (emailSent) {
