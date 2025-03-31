@@ -11,20 +11,7 @@ const Footer = () => {
             <p className="text-gray-600 text-sm">
               Revolutionizing event management with AI-powered solutions that streamline operations and enhance attendee experiences.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-brand-purple transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-brand-purple transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-brand-purple transition-colors">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-brand-purple transition-colors">
-                <Instagram size={20} />
-              </a>
-            </div>
+            
           </div>
 
           <div>
