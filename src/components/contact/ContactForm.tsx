@@ -61,7 +61,7 @@ const ContactForm = () => {
   const sendEmail = async (data: typeof formData) => {
     // Updated template ID to the correct one
     const emailServiceId = "service_mue1zpi";
-    const emailTemplateId = "template_3y5oipj"; // Fixed template ID
+    const emailTemplateId = "template_p3h659e"; // Fixed template ID
     const publicKey = "PoxYb4i_l29fvvWV9";
     
     const templateParams = {
